@@ -1,0 +1,23 @@
+.bg-seminor-footer {
+    background: #052b42;
+}
+
+ul.footer-menu-ul {
+    list-style-type: none;
+    padding: 1em 1em;
+    margin: 0;
+}
+
+.footer-menu ul.footer-menu-ul li {
+    padding: .5em 0;
+    font-size: 14px;
+}
+
+ul.footer-menu-ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-sub-div {
+    padding: 2em 0;
+}

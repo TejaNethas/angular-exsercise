@@ -73,4 +73,19 @@
 
 
     </div>
+    <div class="container-fluid" *ngIf="MainData">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 py-3 bookingSuccess" *ngIf="statusMessage">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <p class="text-success text-center">Your Event Tickets Are Booked Successfully!</p>
+                    <a type="button" class="close" data-dismiss="alert" routerLink="/events" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </section>
+
+<app-footer></app-footer>

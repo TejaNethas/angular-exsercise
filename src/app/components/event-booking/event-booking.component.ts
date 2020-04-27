@@ -1,7 +1,7 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { DataTransferService } from '../../services/data-transfer-service/data-transfer.service'
 import { AjaxCallService } from '../../services/ajax-service/ajax-call.service'
-import { from } from 'rxjs';
+// import { ScrollToService } from 'ng2-scroll-to-el';
 
 @Component({
   selector: 'app-event-booking',
@@ -16,12 +16,18 @@ export class EventBookingComponent implements OnInit {
  public contractValues: any = []; //  Event booking form values 
  public totalEventSeatsNumber: number;
  public count:number = 0;
- public compareValue:boolean
+ public compareValue:boolean;
+ public MainData:any = [];
+ public statusMessage: boolean = false;
  itemDetails = [{
   "numberOfAttendee": ""
  }]
   
-  constructor(private data:DataTransferService, private ajaxData:AjaxCallService,private elem: ElementRef) { 
+  constructor(private data:DataTransferService, 
+    private ajaxData:AjaxCallService,
+    private elem: ElementRef,
+
+    ) { 
     
   }
 
@@ -80,8 +86,14 @@ export class EventBookingComponent implements OnInit {
   }
 
   onSubmit(data){
-    var modifymyJSON = JSON.stringify(data);
-    console.log("modifymyJSON", modifymyJSON);
+    if(data){
+      let res:any = Object.entries(data);
+      this.MainData = res;
+      console.log("EventBookingConfirmData", this.MainData);
+      this.statusMessage = true;
+    }
   }
+
+
 
 }

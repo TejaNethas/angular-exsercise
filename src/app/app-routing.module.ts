@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { EventsComponent} from './components/events/events.component';
 import { EventBookingComponent } from './components/event-booking/event-booking.component';
 import { ErrorComponent } from './components/error/error.component';
