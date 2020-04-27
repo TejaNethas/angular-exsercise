@@ -89,7 +89,7 @@ export class EventBookingComponent implements OnInit {
     if(data){
       let res:any = Object.entries(data);
       this.MainData = res;
-      console.log("EventBookingConfirmData", this.MainData);
+      console.log("EventBookingConfirmData", this.MainData); //Please check for conformed event booking data
       this.statusMessage = true;
     }
   }

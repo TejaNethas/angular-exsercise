@@ -17,7 +17,7 @@ export class EventSearchPipe implements PipeTransform {
     }
 
     if (filter && Array.isArray(items)) {
-      console.log(filter)
+      // console.log(filter)
       let filterKeys = Object.keys(filter);
 
       if (filter) {

@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit {
 
   updateText(event:any){
     this.text = event.target.value;
-    console.log(this.text)
     this.data.updateData(this.text);
   }
 

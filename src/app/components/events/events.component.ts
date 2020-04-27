@@ -28,7 +28,6 @@ export class EventsComponent implements OnInit {
     this.commonService.eventsGetData().subscribe((res: any[]) => {  // events data info local json 
        this.eventsInfoObjToAny = res;
        this.eventsInfo = this.eventsInfoObjToAny.events;
-       console.log(this.eventsInfo.length);
     })
 
     this.data.share.subscribe(sharingDataSub => this.searchText = sharingDataSub);
@@ -38,7 +37,6 @@ export class EventsComponent implements OnInit {
   onSelect(event:any){
     this.eventId = event.target.textContent;
     let eventDataBreak = event;
-    console.log(eventDataBreak);
     let eventData = event.target.previousElementSibling.innerHTML;
     this.eventInfoData = eventData;
     this.sharingEventDataTransfter = this.eventInfoData;
