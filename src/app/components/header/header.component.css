@@ -1,0 +1,36 @@
+.main-body .navbar {
+    padding: 1em 0.5em;
+}
+
+.nav-links-btn .nav-item {
+    padding: 0 1em;
+}
+
+.nav-links-btn .nav-item .nav-link {
+    background: #fff;
+    color: #20cca4 !important;
+    padding: .5em 1em !important;
+    margin-right: .2em;
+    transition: all ease-in-out .3s;
+}
+
+.bg-light-nav {
+    background-color: #ffffff!important;
+    box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}

@@ -1,0 +1,76 @@
+<app-header></app-header>
+<section class="bookingEventSection">
+    <div class="container-fluid">
+        <img src="../../../assets/images/eventThumb/event-booking-banner.jpeg" class="img-fluid">
+        <div [innerHTML]="currentEventInfoShared"></div>
+    </div>
+    <div class="container-fluid">
+
+        <form class="eventBookingForm py-3" novalidate (ngSubmit)="onSubmit(f.value)" #f="ngForm">
+            <div class="form-row">
+
+                <div class="form-group col-md-3">
+                    <label for="userName" class="font-weight-bold">User Name<sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control" name="userName" ngModel #userName="ngModel" pattern="^[a-zA-Z][a-zA-Z ]*$" id="userName" placeholder="Name" required>
+                    <span class="text-danger" *ngIf="userName.errors && (userName.dirty || userName.touched)">
+                        <p class="small m-0" *ngIf="userName.errors.required">Name is required</p>
+                        <p class="small m-0" *ngIf="userName.errors.pattern">Name cannot contain numbers and special characters</p>
+                     </span>
+                </div>
+
+                <div class="form-group col-md-3">
+                    <label for="email" class="font-weight-bold">Email<sup class="text-danger">*</sup></label>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" ngModel #email="ngModel" class="form-control" id="email" placeholder="Email" required>
+                    <span class="text-danger" *ngIf="email.errors && (email.dirty || email.touched)">
+                        <p class="small m-0" *ngIf="email.errors.required">Email is required</p>
+                        <p class="small m-0" *ngIf="email.errors.pattern">Email should match the format (abc@abc.com) </p>
+                     </span>
+                </div>
+
+                <div class="form-group col-md-3">
+                    <label for="phoneNumber" class="font-weight-bold">Phone Number<sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control" pattern="^[0-9]{10}$" id="phoneNumber" name="phoneNumber" ngModel #phoneNumber="ngModel" placeholder="Phone Number" required>
+                    <span class="text-danger" *ngIf="phoneNumber.errors && (phoneNumber.dirty || phoneNumber.touched)">
+                        <p class="small m-0" *ngIf="phoneNumber.errors.required">Phone number is required</p>
+                        <p class="small m-0" *ngIf="phoneNumber.errors.pattern">Phone number contain only 10 numbers - format (8977008**) </p>
+                     </span>
+                </div>
+
+                <!-- <div class="form-group col-md-3">
+                    <label for="numberOfSeats" class="font-weight-bold">Number of seats</label>
+                    <select class="form-control" (change)="isOptionValue($event)" id="numberOfSeats">
+                        <option value="">Select</option>
+                        <option value="{{ selectNumofAttendeList.value }}" *ngFor="let selectNumofAttendeList of localNumberOfAttende">{{ selectNumofAttendeList.name }}</option>
+                    </select>
+                </div> -->
+                <div class="form-group col-md-3">
+                    <label for="email" class="font-weight-bold d-flex">&nbsp;</label>
+                    <a class="btn btn-booking mx-2" (click)="addNewAttendeName($event)">Add new attende <span><i class="fa fa-plus" aria-hidden="true"></i></span></a>
+                </div>
+
+
+
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-3" *ngFor="let cloneInput of itemDetails; let i=index">
+                    <label for="numberOfAttendee{{i+1}}" class="font-weight-bold">Name of the attendee {{i+1}} <sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control" pattern="^[a-zA-Z][a-zA-Z ]*$" id="numberOfAttendee{{i+1}}" name="numberOfAttendee{{i+1}}" [(ngModel)]="itemDetails[i].numberOfAttendee" #numberOfAttendee="ngModel" placeholder="Name of the attendee{{i+1}}" required>
+                    <span class="text-danger" *ngIf="numberOfAttendee.errors && (numberOfAttendee.dirty || numberOfAttendee.touched)">
+                        <p class="small m-0" *ngIf="numberOfAttendee.errors.required">Attendee Name is required</p>
+                        <p class="small m-0" *ngIf="numberOfAttendee.errors.pattern">Attendee Name cannot contain numbers and special characters</p>
+                     </span>
+                </div>
+            </div>
+
+            <div class="eventFormSubmitBtns clearfix">
+                <a class="btn btn-cancel float-right mx-2" routerLink="/events">Cancel</a>
+                <button type="submit" type="submit" [disabled]="f.invalid" class="btn btn-booking float-right mx-2">Submit</button>
+            </div>
+
+
+        </form>
+
+
+    </div>
+</section>

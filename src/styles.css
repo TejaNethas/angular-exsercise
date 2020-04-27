@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* event booking style sheet start from here */
+
+.bookingEventSection {
+    padding: 0 30px 30px 30px;
+    background: #ffffff;
+    overflow: hidden;
+    clear: both;
+    box-shadow: 0px 0px 7px 0px #b2b2b2;
+}
+
+.bookingEventSection h6.card-title.event-booking-name {
+    color: #20cca4 !important;
+    font-size: 2em !important;
+    padding: 0.5em 0 0 0;
+}
+
+.bookingEventSection .event-card p {
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn:disabled {
+    opacity: .65;
+    cursor: not-allowed;
+}

@@ -1,0 +1,62 @@
+.section-pd {
+    padding: 2em 0em;
+}
+
+.event-card .card-body {
+    padding: 0.5rem;
+}
+
+.event-card .card-img-block img {
+    min-height: 170px;
+    max-height: 170px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.event-card .card-img-block {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 170px;
+}
+
+.event-card .card-title {
+    max-width: 210px;
+}
+
+.event-card p {
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+.event-card h5 {
+    color: #000000;
+    font-weight: 600;
+    margin: 0 0 0.5em 0;
+    font-size: 15px;
+    min-height: 40px;
+}
+
+.event-card p.card-text:last-child {
+    margin-bottom: 1rem;
+}
+
+.event-card .btn-learn-more {
+    background-color: #20cca4;
+    border-color: #20cca4;
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.event-card .btn-learn-more:hover {
+    background-color: #ffffff;
+    border-color: #20cca4;
+    color: #20cca4;
+}
+
+.event-card .btn {
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 7px 20px;
+}

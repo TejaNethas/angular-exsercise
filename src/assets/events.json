@@ -1,0 +1,116 @@
+{
+    "events": [{
+            "id": 1,
+            "eventName": "UI Designer Summit",
+            "eventImg": "/assets/images/eventThumb/event-1.jpg",
+            "eventDate": "4/30/2020",
+            "eventSeats": "10",
+            "eventLocation": "Hyderabad",
+            "evnetBookNow": "Book Now"
+        },
+        {
+            "id": 2,
+            "eventName": "Drupal Community Event",
+            "eventImg": "/assets/images/eventThumb/event-2.jpg",
+            "eventPlaceholder": "Drupal Community Event",
+            "eventDate": "4/28/2020",
+            "eventSeats": "20",
+            "eventLocation": "Bangalore",
+            "evnetBookNow": "Book Now"
+        },
+        {
+            "id": 3,
+            "eventName": "All India Developer Summit",
+            "eventImg": "/assets/images/eventThumb/event-3.jpg",
+            "eventPlaceholder": "All India Developer Summit",
+            "eventDate": "5/12/2020",
+            "eventSeats": "5",
+            "eventLocation": "Goa",
+            "evnetBookNow": "Book Now"
+        },
+        {
+            "id": 4,
+            "eventName": "Design Thinking Event",
+            "eventImg": "/assets/images/eventThumb/event-4.png",
+            "eventPlaceholder": "Design Thinking Event",
+            "eventDate": "5/18/2020",
+            "eventSeats": "15",
+            "eventLocation": "Mumbai",
+            "evnetBookNow": "Book Now"
+        },
+        {
+            "id": 5,
+            "eventName": "UI/UX Design Event",
+            "eventImg": "/assets/images/eventThumb/event-5.png",
+            "eventPlaceholder": "UI/UX Design Event",
+            "eventDate": "5/22/2020",
+            "eventSeats": "50",
+            "eventLocation": "Pune",
+            "evnetBookNow": "Book Now"
+        }, {
+            "id": 6,
+            "eventName": "Open Source Contribution Event",
+            "eventImg": "/assets/images/eventThumb/event-6.png",
+            "eventPlaceholder": "Open Source Contribution Event",
+            "eventDate": "5/29/2020",
+            "eventSeats": "50",
+            "eventLocation": "Delhi",
+            "evnetBookNow": "Book Now"
+        }, {
+            "id": 7,
+            "eventName": "Angular Developers Event",
+            "eventImg": "/assets/images/eventThumb/event-7.jpg",
+            "eventPlaceholder": "Angular Developers Event",
+            "eventDate": "5/30/2020",
+            "eventSeats": "25",
+            "eventLocation": "Noida NCR",
+            "evnetBookNow": "Book Now"
+        }, {
+            "id": 8,
+            "eventName": "Vue js Developers Event",
+            "eventImg": "/assets/images/eventThumb/event-8.jpg",
+            "eventPlaceholder": "Vue js Developers Event",
+            "eventDate": "6/01/2020",
+            "eventSeats": "18",
+            "eventLocation": "kolkata",
+            "evnetBookNow": "Book Now"
+        }, {
+            "id": 9,
+            "eventName": "React Js Developers Event",
+            "eventImg": "/assets/images/eventThumb/event-3.jpg",
+            "eventPlaceholder": "React Js Developers Event",
+            "eventDate": "6/01/2020",
+            "eventSeats": "12",
+            "eventLocation": "Dubai",
+            "evnetBookNow": "Book Now"
+        }, {
+            "id": 10,
+            "eventName": "Open source software event",
+            "eventImg": "/assets/images/eventThumb/event-4.png",
+            "eventPlaceholder": "Open source software event",
+            "eventDate": "6/02/2020",
+            "eventSeats": "19",
+            "eventLocation": "London",
+            "evnetBookNow": "Book Now"
+        }, {
+            "id": 11,
+            "eventName": "New Js launch event",
+            "eventImg": "/assets/images/eventThumb/event-5.png",
+            "eventPlaceholder": "New Js launch event",
+            "eventDate": "6/03/2020",
+            "eventSeats": "30",
+            "eventLocation": "Hyderabad",
+            "evnetBookNow": "Book Now"
+        }, {
+            "id": 12,
+            "eventName": "All India Open source contribution event",
+            "eventImg": "/assets/images/eventThumb/event-6.png",
+            "eventPlaceholder": "All India Open source contribution event",
+            "eventDate": "6/03/2020",
+            "eventSeats": "22",
+            "eventLocation": "Hyderabad",
+            "evnetBookNow": "Book Now"
+        }
+
+    ]
+}

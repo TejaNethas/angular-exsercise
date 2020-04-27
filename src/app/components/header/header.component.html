@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light-nav fixed-top">
+    <a class="navbar-brand text-uppercase" routerLink="/events">Events</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav ml-auto nav-links-btn">
+            <li class="nav-item">
+                <div class="form-group has-search m-0">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" [(ngModel)]="text" [(value)]="text" #name name="name" (keyup)="updateText($event)" class="form-control m-0" placeholder="Search for event">
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</nav>
