@@ -15,7 +15,7 @@
                             <div class="event-booking-block">
                                 <h6 class="card-title text-truncate event-booking-name" title="{{eventBlock.eventName}}">{{eventBlock.eventName}}</h6>
                                 <p class="card-text my-2 event-booking-loc"><span class="text-secondary">Event Date : </span>{{eventBlock.eventDate | date}} | {{eventBlock.eventLocation}}</p>
-                                <p class="card-text event-booking-seats"><span class="text-secondary">Event Sets : </span><span class="event-seats-count-transfer">{{eventBlock.eventSeats}}</span></p>
+                                <p class="card-text event-booking-seats"><span class="text-secondary">Event Seats : </span><span class="event-seats-count-transfer">{{eventBlock.eventSeats}}</span></p>
                             </div>
 
                             <button (click)="onSelect($event)" *ngIf="eventBlock.eventSeats > 0" class="btn btn-learn-more themeBtn"><span class="d-none">{{i+1}}</span>{{eventBlock.evnetBookNow}}</button>

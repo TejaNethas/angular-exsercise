@@ -30,8 +30,11 @@ export class EventsComponent implements OnInit {
        this.eventsInfoObjToAny = res;
        this.eventsInfo = this.eventsInfoObjToAny.events;
     })
-
     this.data.share.subscribe(sharingDataSub => this.searchText = sharingDataSub);
+  }
+
+  ngAfterViewInit(){
+    this.searchText = '';
   }
 
 
