@@ -83,14 +83,19 @@ export class EventBookingComponent implements OnInit {
       }
     }
 
+    this.statusMessage = false; //If New Attendee is added by user need to hide the status message
+
   }
 
   onSubmit(data){
     if(data){
       let res:any = Object.entries(data);
       this.MainData = res;
-      console.log("EventBookingConfirmData", this.MainData); //Please check for conformed event booking data
+      console.log("EventBookingConfirmData", this.MainData); //Please check for conformed event booking data in console
       this.statusMessage = true;
+    }
+    else{
+      this.statusMessage = false;
     }
   }
 

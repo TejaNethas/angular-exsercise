@@ -1,28 +1,40 @@
 <app-header></app-header>
 <app-banner></app-banner>
-<section class="section-pd">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-3" *ngFor="let eventBlock of eventsInfo | eventSearch: {eventName: searchText}; let i=index">
-                <div class="card event-card">
 
-                    <div class="card-img-block">
-                        <img class="card-img-top" src="{{eventBlock.eventImg}}" title="{{eventBlock.eventPlaceholder}}" alt="{{eventBlock.eventPlaceholder}}">
-                    </div>
-                    <div class="card-body">
-                        <div class="event-booking-block">
-                            <h6 class="card-title text-truncate event-booking-name" title="{{eventBlock.eventName}}">{{eventBlock.eventName}}</h6>
-                            <p class="card-text my-2 event-booking-loc"><span class="text-secondary">Event Date : </span>{{eventBlock.eventDate | date}} | {{eventBlock.eventLocation}}</p>
-                            <p class="card-text event-booking-seats"><span class="text-secondary">Event Sets : </span><span class="event-seats-count-transfer">{{eventBlock.eventSeats}}</span></p>
+<ng-container *ngIf="(eventsInfo | eventSearch: {eventName: searchText}) as result">
+    <section class="section-pd">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-3" *ngFor="let eventBlock of result;let i = index">
+                    <div class="card event-card">
+
+                        <div class="card-img-block">
+                            <img class="card-img-top" src="{{eventBlock.eventImg}}" title="{{eventBlock.eventPlaceholder}}" alt="{{eventBlock.eventPlaceholder}}">
                         </div>
-                        <button (click)="onSelect($event)" class="btn btn-learn-more themeBtn "><span class="d-none">{{i+1}}</span>{{eventBlock.evnetBookNow}}</button>
+                        <div class="card-body">
+                            <div class="event-booking-block">
+                                <h6 class="card-title text-truncate event-booking-name" title="{{eventBlock.eventName}}">{{eventBlock.eventName}}</h6>
+                                <p class="card-text my-2 event-booking-loc"><span class="text-secondary">Event Date : </span>{{eventBlock.eventDate | date}} | {{eventBlock.eventLocation}}</p>
+                                <p class="card-text event-booking-seats"><span class="text-secondary">Event Sets : </span><span class="event-seats-count-transfer">{{eventBlock.eventSeats}}</span></p>
+                            </div>
+
+                            <button (click)="onSelect($event)" *ngIf="eventBlock.eventSeats > 0" class="btn btn-learn-more themeBtn"><span class="d-none">{{i+1}}</span>{{eventBlock.evnetBookNow}}</button>
+                            <button *ngIf="eventBlock.eventSeats == 0" class="btn btn-learn-more themeBtn" disabled><span class="d-none">{{i+1}}</span>{{eventBlock.evnetBookNow}}</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" *ngIf="result.length === 0">
+                <div class="col-12">
+                    <div class="noResultsFound py-5 text-center">
+                        <p class="font-weight-bold py-3">No results found!</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-        </div>
-    </div>
-</section>
+    </section>
+</ng-container>
+
 
 <app-footer></app-footer>

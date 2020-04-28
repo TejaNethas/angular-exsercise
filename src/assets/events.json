@@ -34,9 +34,9 @@
             "eventImg": "/assets/images/eventThumb/event-4.png",
             "eventPlaceholder": "Design Thinking Event",
             "eventDate": "5/18/2020",
-            "eventSeats": "15",
+            "eventSeats": "0",
             "eventLocation": "Mumbai",
-            "evnetBookNow": "Book Now"
+            "evnetBookNow": "Sold Out"
         },
         {
             "id": 5,
@@ -98,9 +98,9 @@
             "eventImg": "/assets/images/eventThumb/event-5.png",
             "eventPlaceholder": "New Js launch event",
             "eventDate": "6/03/2020",
-            "eventSeats": "30",
+            "eventSeats": "0",
             "eventLocation": "Hyderabad",
-            "evnetBookNow": "Book Now"
+            "evnetBookNow": "Sold Out"
         }, {
             "id": 12,
             "eventName": "All India Open source contribution event",
@@ -108,7 +108,7 @@
             "eventPlaceholder": "All India Open source contribution event",
             "eventDate": "6/03/2020",
             "eventSeats": "22",
-            "eventLocation": "Hyderabad",
+            "eventLocation": "Chennai",
             "evnetBookNow": "Book Now"
         }
 
