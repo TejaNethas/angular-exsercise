@@ -19,7 +19,7 @@
                             </div>
 
                             <button (click)="onSelect($event)" *ngIf="eventBlock.eventSeats > 0" class="btn btn-learn-more themeBtn"><span class="d-none">{{i+1}}</span>{{eventBlock.evnetBookNow}}</button>
-                            <button *ngIf="eventBlock.eventSeats == 0" class="btn btn-learn-more themeBtn" disabled><span class="d-none">{{i+1}}</span>{{eventBlock.evnetBookNow}}</button>
+                            <button *ngIf="eventBlock.eventSeats == 0" class="btn btn-sold-out themeBtn" disabled><span class="d-none">{{i+1}}</span>{{eventBlock.evnetBookNow}}</button>
 
                         </div>
                     </div>

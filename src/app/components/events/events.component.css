@@ -54,6 +54,20 @@
     color: #20cca4;
 }
 
+.event-card .btn-sold-out {
+    background-color: #ff0018;
+    border-color: #ff0018;
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.event-card .btn-sold-out:hover {
+    background-color: #ffffff;
+    border-color: #ff0018;
+    color: #ff0018;
+}
+
 .event-card .btn {
     border-radius: 2px;
     text-transform: uppercase;
