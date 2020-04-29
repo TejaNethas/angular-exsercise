@@ -27,3 +27,18 @@
     opacity: .65;
     cursor: not-allowed;
 }
+
+
+/* Mobile responsive related changes */
+
+@media only screen and (max-width: 320px) {
+    .bookingEventSection {
+        padding: 0px !important;
+    }
+    .xs-remove {
+        display: none !important;
+    }
+    .bookingEventSection h6.card-title.event-booking-name {
+        font-size: 1.2em !important;
+    }
+}
